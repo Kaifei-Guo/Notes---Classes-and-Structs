@@ -1,0 +1,66 @@
+﻿-> Classes and Structs are essentially a data structure that 
+  holds a set of data and behaviors that belong together as a logical unit. 
+
+-> Memmbers of a Class or Struct
+	- Methods
+	- Properties
+	- Events
+	- (Fields, Constants, Finalizers, Indexers, Operators, Nested Types)
+
+-> Class is a reference type; while Struct is a value type
+
+-> Class is often used to model complex behavior, or data that is intended to be modified after a class object 
+   is created. 
+-> Struct is best suited for small data structures that contina primarily data that is not intended to be modified
+   after the struct is created. 
+
+-> What is Encapuslation? 
+	- Using a data strucure to hold some data and behavior, for example using Class or Struct
+	- Specify how the memmbers are accessible outside of the Class or Struct
+	- To limit the potential for coding errors or malicious exploits
+
+-> Accessibility
+	- by default, the accessibility is "private"
+	- (public, protected, internal, protected internal, private)
+
+-> Inheritance
+	- a derived class automatically contains all the public, protected, and internal members of the base class
+	  except its constuctors and finalizers
+	- Abstract Class: some methods are not implemented
+	- Sealed Class: cannot be inherited
+
+-> Interfaces
+
+-> Generic Types 
+	- Classes and structs can be defined with one or more type parameters
+	-e.g. List<T>
+
+-> Static Types
+	- Classes (but not structs) can be declared as static
+	- A static class can contain only static memvbers and cannot be instantiated with the new keyword
+
+-> Nested Types
+	- A class or Struct can be nested within another Class or Struct
+
+-> Partial Types
+
+-> Object Initializers
+
+-> Anonymous Types
+
+-> Extension Methods
+
+---------------------------------------------------------------------------------------------------------------
+-> What is an object of a Class or Struct? 
+	- An object is basically a block of memory that has been allocated and configured according to the blueprint. 
+	- A typical program consists of multiple objects interacting dynamically
+---------------------------------------------------------------------------------------------------------------
+-> Inheritance 
+	- Inheritance, together with encapuslation, is one of the three primary characteristics of OOP. 
+	- Derived class "reuse", "extend" and "modify" the behavior defined in base class. 
+	- Inheritance in C# is transitive.
+	- Conceptually, a derived class is a specialization of the base class.
+---------------------------------------------------------------------------------------------------------------
+-> Abstract base class
+	- a class can be declared abstract if we want to prevent direct instantiation by using the new operator
+	- an abstract class can be used only if a new class is derived from it
